@@ -500,8 +500,54 @@ main section{
 
 }
 
-@media screen and (max-width: 600px){
-form{
-  width: 90%;
+@media screen and (max-width: 700px){
+.hero{
+  padding: 0px 30px;
 }
+.main h2{
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+ul{
+  gap: 5px;
+  font-size: 0.9rem;
+  padding-left: 0;
+}
+.logo h1{
+  font-size: 1.4rem;
+}
+nav img{
+  width: 40px;
+  height: 40px;
+}
+main .druga{
+  padding: 50px 20px 0px 20px;
+}
+}
+
+@media screen and (max-width: 600px){
+  form{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px){
+  .logo h1{
+    font-size: 1.3rem;
+  }
+  .hero{
+    padding: 0px 10px;
+  }
+  .btns{
+    gap: 30px;
+  }
+  .boxes{
+    width: 95%;
+  }
+  main .druga{
+  padding: 50px 0px 50px 0px;
+}
+.druga p{
+  font-weight: 300;
+}
+
 }
