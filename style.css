@@ -141,7 +141,7 @@ body{
     max-width: 100vw;
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: #080B14;
 }
 .hero{
@@ -178,7 +178,7 @@ h1{
 }
 nav img{
     width: 50px;
-    height: 50px;
+    height: auto;
 }
 .logo{
     display: flex;
@@ -505,8 +505,8 @@ main section{
   padding: 0px 30px;
 }
 .main h2{
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 ul{
   gap: 5px;
@@ -528,6 +528,10 @@ main .druga{
 @media screen and (max-width: 600px){
   form{
     width: 90%;
+
+  }
+  .main h2{
+    text-align: center;
   }
 }
 @media screen and (max-width: 500px){
@@ -541,13 +545,18 @@ main .druga{
     gap: 30px;
   }
   .boxes{
-    width: 95%;
+    width: 85%;
   }
   main .druga{
-  padding: 50px 0px 50px 0px;
+  padding: 50px 15px 30px 15px;
 }
 .druga p{
   font-weight: 300;
 }
-
+.big-quote{
+  margin: 0;
+}
+main .prva{
+  gap: 50px;
+}
 }
