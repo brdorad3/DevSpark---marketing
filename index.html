@@ -58,33 +58,36 @@
     </div>
     <main>
       <section class="prva" id="Usluge">
-        <h2 id="usluge">Usluge</h2>
+        <h2 id="usluge" class="slide-in-left">Usluge</h2>
         <div class="usluge-box">
-          <div class="boxes">
+          <div class="boxes slide-in-left">
             <img src="images/loudspeaker-6-svgrepo-com.svg" class="filter-svg" alt="">
             <h4>Digitalni marketing</h4>
             <p>Prilagođeni planovi koji donose rezultate uz SEO</p>
           </div>
-          <div class="boxes">
+          <div class="boxes slide-in-left">
             <img src="images/chart-line-svgrepo-com.svg" class="filter-svg" alt="">
-            <h4>Drustvene mreze</h4>
+            <h4>Društvene mreze</h4>
             <p>Proširite svoj brend na platformama pomoću viralnih kampanja i analitike.</p>
           </div>
-          <div class="boxes">
+          <div class="boxes slide-in-left">
             <img src="images/brush-svgrepo-com.svg" class="filter-svg" alt="">
             <h4>Kreativni dizajn</h4>
             <p>Zapanjujući vizuali i brendiranje koji osvajaju i pretvaraju.</p>
           </div>
         </div>
       </section>
-      <section class="druga" id="Onama">
-        <h2>O nama</h2>
+      <section class="druga " id="Onama">
+        <div class="slide-in-right">
+        <h2 >O nama</h2>
         <p>Vizija DevSpark-a je izgraditi snažnu digitnalnu zajednicu koja podržava razvoj IT industrije i pomaže inovativnim projektima da pronađu svoje mjesto na tržištu. Želimo stvoriti prostor gdje se tehnologija, kreativnost i marketing spajaju kako bi podržali nove ideje i digitalne inovacije</p>
         <blockquote class="big-quote">
   Svaka velika ideja počinje jednom malom iskrom
 </blockquote>
+</div>
       </section>
-      <section class="treca" id="kontakt">
+      <section class="treca " id="kontakt">
+        <div class="frm slide-in-left">
         <h2>Kontakt</h2>
         <div class="kont">
           <img src="images/mail-alt-svgrepo-com.svg" class="mailikon" alt="">
@@ -106,6 +109,7 @@
           </div>
           <button type="submit">Pošalji poruku</button>
         </form>
+        </div>
       </section>
     </main>
 
@@ -115,6 +119,16 @@
   </div>
 </footer>
 
+    <script>
     
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.slide-in-left').forEach(el => observer.observe(el));
+document.querySelectorAll('.slide-in-right').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
